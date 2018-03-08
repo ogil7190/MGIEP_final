@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="car1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#f17710</item>
+        <item name="colorPrimaryDark">#da6c0f</item>
+        <item name="colorAccent">#AF262E</item>
+    </style>
+
+    <style name="car2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#4ec981</item>
+        <item name="colorPrimaryDark">#399e63</item>
+        <item name="colorAccent">#535353</item>
+    </style>
+
+    <style name="car3" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#21dada</item>
+        <item name="colorPrimaryDark">#14a6a6</item>
+        <item name="colorAccent">#f2df08</item>
+    </style>
+
+    <style name="car4" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#28345F</item>
+        <item name="colorPrimaryDark">#303b71</item>
+        <item name="colorAccent">#4e89c8</item>
+    </style>
+
+    <style name="car5" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#28345F</item>
+        <item name="colorPrimaryDark">#303b71</item>
+        <item name="colorAccent">#8B1F26</item>
+    </style>
+
+    <style name="car6" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#ab2328</item>
+        <item name="colorPrimaryDark">#ac171c</item>
+        <item name="colorAccent">#e1d8ad</item>
+    </style>
+</resources>

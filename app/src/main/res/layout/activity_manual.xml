@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.mriu.kankhol.Sikho">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            app:srcCompat="@drawable/ic_home_black_48px"
+            android:tint="#555555"
+            android:layout_margin="30px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_textview"
+            android:id="@+id/btn_home"
+            android:layout_width="80px"
+            android:layout_height="80px" />
+
+        <ImageView
+            android:layout_margin="30px"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_info"
+            app:srcCompat="@drawable/ic_info_black_24px"
+            android:tint="#555555"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_textview"
+            android:layout_width="80px"
+            android:layout_height="80px" />
+
+        <ImageView
+            android:layout_toStartOf="@+id/btn_info"
+            android:layout_margin="30px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_textview"
+            android:id="@+id/btn_document"
+            app:srcCompat="@drawable/ic_help_black_24px"
+            android:tint="#555555"
+            android:layout_width="80px"
+            android:layout_height="80px" />
+
+        <ImageView
+            android:layout_toStartOf="@+id/btn_document"
+            android:layout_margin="30px"
+            android:background="@drawable/round_textview"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_report"
+            app:srcCompat="@drawable/ic_assessment_black_24dp"
+            android:tint="#555555"
+            android:layout_width="80px"
+            android:layout_height="80px" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CARDVIEW0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/controls"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/top_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="5dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/title"
+                android:layout_weight="5"
+                android:scaleType="centerInside"
+                android:src="@drawable/manual2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/content"
+                android:layout_weight="2"
+                android:scaleType="centerInside"
+                android:src="@drawable/manual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_margin="20px"
+            android:id="@+id/backward"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_textview"
+            android:backgroundTint="#ffffff"
+            android:tint="#555555"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_arrow_back_black_24px" />
+
+        <ImageButton
+            android:layout_margin="20px"
+            android:id="@+id/next"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_textview"
+            android:backgroundTint="#ffffff"
+            android:tint="#555555"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_arrow_forward_black_24px" />
+    </LinearLayout>
+</RelativeLayout>

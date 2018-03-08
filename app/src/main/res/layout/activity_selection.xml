@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.mriu.kankhol.SelectionActivity">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginRight="15px"
+                android:background="@drawable/round_corner"
+                android:id="@+id/image1"
+                android:padding="10dp"
+                android:src="@drawable/alien1"
+                android:scaleType="fitCenter"
+                android:layout_width="220px"
+                android:layout_height="220px" />
+            <ImageView
+                android:background="@drawable/round_corner"
+                android:id="@+id/image2"
+                android:padding="10dp"
+                android:src="@drawable/alien2"
+                android:scaleType="fitCenter"
+                android:layout_width="220px"
+                android:layout_height="220px" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15px"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginRight="15px"
+                android:background="@drawable/round_corner"
+                android:padding="10dp"
+                android:id="@+id/image3"
+                android:src="@drawable/alien3"
+                android:scaleType="fitCenter"
+                android:layout_width="220px"
+                android:layout_height="220px" />
+            <ImageView
+                android:background="@drawable/round_corner"
+                android:padding="10dp"
+                android:id="@+id/image4"
+                android:src="@drawable/alien4"
+                android:scaleType="fitCenter"
+                android:layout_width="220px"
+                android:layout_height="220px" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15px"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginRight="15px"
+                android:background="@drawable/round_corner"
+                android:id="@+id/image5"
+                android:padding="10dp"
+                android:src="@drawable/alien5"
+                android:scaleType="fitCenter"
+                android:layout_width="220px"
+                android:layout_height="220px" />
+            <ImageView
+                android:background="@drawable/round_corner"
+                android:id="@+id/image6"
+                android:padding="10dp"
+                android:src="@drawable/alien6"
+                android:scaleType="fitCenter"
+                android:layout_width="220px"
+                android:layout_height="220px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/done"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_navigate_next_black_24dp"
+        android:layout_width="100px"
+        android:layout_height="100px" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="55px"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:text="आपका साथी" />
+
+</RelativeLayout>

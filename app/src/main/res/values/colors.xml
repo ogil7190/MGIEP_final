@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#48aca5</color>
+    <color name="colorPrimaryDark">#38837e</color>
+    <color name="colorAccent">#ffaf40</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="c1">#53868B </color>
+    <color name="c2">#7AC5CD </color>
+    <color name="c3">#8EE5EE </color>
+    <color name="c4">#98F5FF</color>
+
+    <array name="waveColor">
+
+        <item>@color/c4</item>
+        <item>@color/c3</item>
+        <item>@color/c2</item>
+        <item>@color/c1</item>
+    </array>
+</resources>

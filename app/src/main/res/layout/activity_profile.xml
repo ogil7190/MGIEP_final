@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    tools:context="edu.mriu.kankhol.ProfileActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cartoon"
+        android:layout_marginTop="80px"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120px"
+        android:layout_height="120px" />
+
+    <EditText
+        android:layout_marginTop="100px"
+        android:id="@+id/name"
+        android:layout_below="@+id/cartoon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:background="@drawable/round_textview"
+        android:hint="Child's Name"
+        android:padding="10px"
+        android:textAlignment="center"
+        android:textSize="40px" />
+
+    <EditText
+        android:maxLength="1"
+        android:id="@+id/age"
+        android:layout_below="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:background="@drawable/round_textview"
+        android:hint="Child's Age"
+        android:inputType="number"
+        android:padding="10px"
+        android:textAlignment="center"
+        android:layout_marginTop="60px"
+        android:textSize="40px" />
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_marginTop="100px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_female"
+                android:src="@drawable/female"
+                android:scaleType="fitCenter"
+                android:layout_width="80px"
+                android:layout_height="100px" />
+
+            <RadioButton
+                android:layout_marginRight="100px"
+                android:layout_toRightOf="@+id/img_female"
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/img_male"
+                android:layout_width="80px"
+                android:layout_height="100px"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/female"
+                android:scaleType="fitCenter"
+                android:src="@drawable/male" />
+            <RadioButton
+                android:layout_toRightOf="@+id/img_male"
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_marginTop="30px"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/courseSelection"
+        android:layout_below="@id/gender"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="30px"
+                android:text="Language"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:layout_weight="1"
+                android:id="@+id/language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="30px"
+                android:text="Course"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:layout_weight="1"
+                android:id="@+id/course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/tnc"
+        android:layout_marginTop="50px"
+        android:layout_below="@+id/courseSelection"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="20px"
+        android:text="By checking this you gives us permission to store analytics data."
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginTop="50px"
+        android:layout_centerHorizontal="true"
+        android:padding="20px"
+        android:layout_below="@+id/tnc"
+        android:textSize="40px"
+        android:text="Submit"
+        android:background="@drawable/round_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+</ScrollView>

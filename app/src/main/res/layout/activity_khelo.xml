@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:splitMotionEvents="false"
+    android:keepScreenOn="true"
+    android:layout_height="match_parent"
+    tools:context="edu.mriu.kankhol.Sikho">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            app:srcCompat="@drawable/ic_volume_up_black_24px"
+            android:tint="#555555"
+            android:layout_margin="30px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_textview"
+            android:id="@+id/btn_play_pause"
+            android:layout_width="80px"
+            android:layout_height="80px" />
+
+        <ImageView
+            android:layout_margin="30px"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_info"
+            app:srcCompat="@drawable/ic_info_black_24px"
+            android:tint="#555555"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_textview"
+            android:layout_width="80px"
+            android:layout_height="80px" />
+
+        <ImageView
+            android:layout_toStartOf="@+id/btn_info"
+            android:layout_margin="30px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_textview"
+            android:id="@+id/btn_document"
+            app:srcCompat="@drawable/ic_help_black_24px"
+            android:tint="#555555"
+            android:layout_width="80px"
+            android:layout_height="80px" />
+
+        <ImageView
+            android:layout_toStartOf="@+id/btn_document"
+            android:layout_margin="30px"
+            android:background="@drawable/round_textview"
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_report"
+            app:srcCompat="@drawable/ic_assessment_black_24dp"
+            android:tint="#555555"
+            android:layout_width="80px"
+            android:layout_height="80px" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CARDVIEW1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/controls"
+        android:layout_below="@id/top_bar"
+        android:layout_alignParentStart="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/RL_L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/RL_M"
+                android:layout_toStartOf="@+id/RL_M"
+                android:padding="10px">
+
+                <ImageView
+                    android:id="@+id/one"
+                    android:layout_width="160px"
+                    android:layout_height="160px" />
+
+                <Button
+                    android:id="@+id/one_textView"
+                    android:layout_width="160px"
+                    android:layout_height="160px"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/round"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="90px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_M"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:padding="10px"
+                android:layout_marginLeft="60px"
+                android:layout_marginRight="60px"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/two"
+                    android:layout_width="160px"
+                    android:layout_height="160px" />
+                />
+                <Button
+                    android:id="@+id/two_textView"
+                    android:layout_width="160px"
+                    android:layout_height="160px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="90px"
+                    android:background="@drawable/round"
+                    android:text=""
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RL_R"
+                android:layout_toRightOf="@+id/RL_M"
+                android:layout_centerVertical="true"
+                android:padding="8px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/three"
+                    android:layout_width="160px"
+                    android:layout_height="160px" />
+
+                <Button
+                    android:id="@+id/three_textView"
+                    android:layout_width="160px"
+                    android:layout_height="160px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="90px"
+                    android:background="@drawable/round"
+                    android:text=""
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_margin="20px"
+            android:id="@+id/backward"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_textview"
+            android:backgroundTint="#ffffff"
+            android:tint="#555555"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_arrow_back_black_24px" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/alien"
+            android:layout_width="80px"
+            android:layout_height="80px" />
+
+        <ImageButton
+            android:layout_margin="20px"
+            android:id="@+id/next"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_textview"
+            android:backgroundTint="#ffffff"
+            android:tint="#555555"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_arrow_forward_black_24px" />
+    </LinearLayout>
+</RelativeLayout>

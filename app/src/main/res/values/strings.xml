@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kaan Khol</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="splash_content">MRIU_MGIEP\nPhonological Awareness App\nPre-Prototype\nDemo-1\n07-11-2017</string>
+    <string name="title_activity_khelo_meetesh">KheloMeetesh</string>
+
+    <string name="credits"><u>Credits:\n</u><b>App Concept and Design\n</b>Nandini Chatterjee Singh, Saif Ali\n<b>Development\n</b>Vivek Kumar, Meetesh Mehta\n<b>Art\n</b>Nandini Bhotika</string>
+</resources>
